@@ -1,5 +1,5 @@
 # Use a base image with JDK and Maven pre-installed
-FROM adoptopenjdk/openjdk17:alpine-jre
+FROM openjdk:17-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
