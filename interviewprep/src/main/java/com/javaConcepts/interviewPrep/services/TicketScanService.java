@@ -10,5 +10,8 @@ public class TicketScanService {
     @Autowired
     TicketRepository ticketRepository;
 
+    public void scanTicket(){
+
+    }
 
 }
