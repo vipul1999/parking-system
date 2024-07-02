@@ -1,6 +1,6 @@
-package com.javaConcepts.interviewPrep.services;
+package com.parking.system.services;
 
-import com.javaConcepts.interviewPrep.database.repository.TicketRepository;
+import com.parking.system.database.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

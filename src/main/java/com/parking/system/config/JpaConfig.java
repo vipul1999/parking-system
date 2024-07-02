@@ -1,4 +1,4 @@
-package com.javaConcepts.interviewPrep.config;
+package com.parking.system.config;
 
 import jakarta.persistence.EntityManagerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

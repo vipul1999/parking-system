@@ -1,8 +1,7 @@
-package com.javaConcepts.interviewPrep.database.repository;
+package com.parking.system.database.repository;
 
-import com.javaConcepts.interviewPrep.database.entity.Ticket;
+import com.parking.system.database.entity.Ticket;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

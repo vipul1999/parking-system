@@ -1,6 +1,6 @@
-package com.javaConcepts.interviewPrep.controller;
+package com.parking.system.controller;
 
-import com.javaConcepts.interviewPrep.database.entity.Ticket;
+import com.parking.system.database.entity.Ticket;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

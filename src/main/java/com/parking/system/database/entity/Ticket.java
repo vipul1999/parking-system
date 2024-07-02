@@ -1,4 +1,4 @@
-package com.javaConcepts.interviewPrep.database.entity;
+package com.parking.system.database.entity;
 
 import jakarta.persistence.*;
 
