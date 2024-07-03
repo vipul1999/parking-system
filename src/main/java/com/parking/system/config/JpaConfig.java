@@ -22,7 +22,7 @@ public class JpaConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource);
-        em.setPackagesToScan("com.parking.system.database.entity"); // Set the package where your JPA entities are located
+        em.setPackagesToScan("com.parking.system.database.entity","com.parking.system.ecommerce.database.entity"); // Set the package where your JPA entities are located
         em.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         return em;
     }
