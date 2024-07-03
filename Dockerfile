@@ -1,6 +1,8 @@
 # Use a base image with JDK and Maven pre-installed
 FROM openjdk:17-alpine
 
+RUN ./gradlew bootJar
+
 # Set the working directory inside the container
 WORKDIR /app
 
