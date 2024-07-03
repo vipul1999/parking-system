@@ -1,7 +1,7 @@
-package com.parking.system.services;
+package com.parking.system.psas.services;
 
-import com.parking.system.database.entity.Ticket;
-import com.parking.system.database.repository.TicketRepository;
+import com.parking.system.psas.database.entity.Ticket;
+import com.parking.system.psas.database.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

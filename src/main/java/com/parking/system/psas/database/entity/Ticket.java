@@ -1,4 +1,4 @@
-package com.parking.system.database.entity;
+package com.parking.system.psas.database.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

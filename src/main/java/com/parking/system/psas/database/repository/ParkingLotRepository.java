@@ -1,6 +1,6 @@
-package com.parking.system.database.repository;
+package com.parking.system.psas.database.repository;
 
-import com.parking.system.database.entity.ParkingLot;
+import com.parking.system.psas.database.entity.ParkingLot;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

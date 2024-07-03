@@ -1,7 +1,7 @@
-package com.parking.system.controller;
+package com.parking.system.psas.controller;
 
-import com.parking.system.database.entity.Ticket;
-import com.parking.system.services.TicketScanService;
+import com.parking.system.psas.database.entity.Ticket;
+import com.parking.system.psas.services.TicketScanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
