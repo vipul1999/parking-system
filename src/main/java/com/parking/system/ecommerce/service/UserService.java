@@ -16,4 +16,6 @@ public class UserService {
     //getCartInfo
 
     //see OrderHistory
+
+    //basic page, item-listing without any filter
 }
