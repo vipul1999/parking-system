@@ -5,6 +5,8 @@ WORKDIR /app
 # Copy the build files and Gradle wrapper
 COPY . /app
 
+RUN chmod +x ./gradlew
+
 # Run Gradle to build the application
 RUN ./gradlew bootJar
 
