@@ -10,7 +10,7 @@ public class ShipmentHistory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String orderId;
-    private String shipmentId;
+    private Order order;
+    private Shipment shipment;
     private ShipmentStatus shipmentStatus;
 }
