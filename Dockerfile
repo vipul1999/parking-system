@@ -5,7 +5,7 @@ FROM openjdk:17-alpine
 WORKDIR /app
 
 # Copy the packaged Spring Boot application JAR file into the container
-COPY target/parkingsystem.jar app.jar
+COPY build/libs/parking-system-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port that your Spring Boot application uses (default is 8080)
 EXPOSE 8080
