@@ -3,7 +3,6 @@ package com.parking.system.movie_ticket_system.service;
 import org.springframework.stereotype.Service;
 
 //only authenticated users are allowed to book tickets
-@Service
 public class TicketService {
 
     //show booking history of the user
