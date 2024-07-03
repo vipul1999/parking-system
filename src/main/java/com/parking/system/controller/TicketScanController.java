@@ -1,23 +1,33 @@
 package com.parking.system.controller;
 
 import com.parking.system.database.entity.Ticket;
+import com.parking.system.services.TicketScanService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/tickets")
 public class TicketScanController {
 
+    @Autowired
+    TicketScanService ticketScanService;
     // Example endpoint to handle HTTP GET requests
     @GetMapping("/{ticketId}")
-    public String getTicketDetails(@PathVariable Long ticketId) {
+    public String getTicketDetails(@PathVariable Integer ticketId) {
         // Replace with your logic to fetch ticket details from service or repository
-        return "Ticket ID: " + ticketId + " details retrieved successfully.";
+        Ticket ticket = ticketScanService.findById(ticketId);
+        if(ObjectUtils.isEmpty(ticket)){
+            return "Ticket Not found!";
+        }
+        return "Ticket ID: " + ticket.toString() + " details retrieved successfully.";
     }
 
     // Example endpoint to handle HTTP POST requests
     @PostMapping("/create")
     public String createTicket(@RequestBody Ticket ticket) {
         // Replace with your logic to create a new ticket
+        ticketScanService.createTicket(ticket);
         return "Ticket created successfully: " + ticket.toString();
     }
 
