@@ -1,17 +1,18 @@
 package com.parking.system.ecommerce.database.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.Data;
+import jakarta.persistence.*;
+
+import java.io.Serializable;
 
 @Entity
-@Data
-public class Order {
+@Table(name = "orders")
+public class Order implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "order_number")
     private String orderNumber;
-    private User userId;
+    @Column(name = "user_id")
+    private Customer userId;
 }
